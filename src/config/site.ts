@@ -15,7 +15,7 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://duckroost-digital.vercel.app",
   locale: "en_US",
   links: {
-    email: "hello@example.com",
+    email: "tntemplet@duckroostdigital.com",
     calendly: "",
     github: "",
     linkedin: "",
