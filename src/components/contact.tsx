@@ -4,8 +4,8 @@ export function Contact() {
   const mail = `mailto:${siteConfig.links.email}?subject=${encodeURIComponent("Project inquiry")}`;
 
   return (
-    <div className="mx-auto max-w-3xl rounded-3xl border border-white/10 bg-[var(--color-surface-elevated)] p-8 sm:p-10">
-      <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+    <div className="mx-auto max-w-3xl rounded-3xl border border-[color-mix(in_oklab,var(--color-brand-teal)_20%,transparent)] bg-[var(--color-surface-elevated)] p-8 sm:p-10">
+      <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[var(--color-highlight)] sm:text-4xl">
         Ready when you are
       </h2>
       <p className="mt-4 text-[var(--color-mist)]">
@@ -25,7 +25,7 @@ export function Contact() {
             href={siteConfig.links.calendly}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-white transition-colors hover:border-white/25 hover:bg-white/10"
+            className="inline-flex items-center justify-center rounded-full border border-[color-mix(in_oklab,var(--color-brand-teal)_35%,transparent)] bg-[color-mix(in_oklab,var(--color-brand-teal)_10%,transparent)] px-6 py-3 text-sm font-medium text-[var(--color-highlight)] transition-colors hover:border-[color-mix(in_oklab,var(--color-accent-soft)_40%,transparent)] hover:bg-[color-mix(in_oklab,var(--color-brand-teal)_16%,transparent)]"
           >
             Schedule a call
           </a>
@@ -33,7 +33,7 @@ export function Contact() {
       </div>
       <p className="mt-6 text-xs text-[var(--color-mist)]/80">
         Add your Calendly URL in{" "}
-        <code className="rounded bg-white/10 px-1.5 py-0.5 text-[var(--color-mist)]">
+        <code className="rounded bg-[color-mix(in_oklab,var(--color-brand-teal)_14%,transparent)] px-1.5 py-0.5 text-[var(--color-mist)]">
           src/config/site.ts
         </code>{" "}
         to show a booking button.

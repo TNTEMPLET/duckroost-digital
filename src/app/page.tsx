@@ -14,13 +14,13 @@ export default function Home() {
         <Hero />
         <section
           id="work"
-          className="scroll-mt-20 border-t border-white/5 bg-black/20 px-4 py-20 sm:px-6"
+          className="scroll-mt-20 border-t border-[color-mix(in_oklab,var(--color-brand-teal)_14%,transparent)] bg-[color-mix(in_oklab,var(--color-surface-elevated)_35%,var(--color-surface))] px-4 py-20 sm:px-6"
           aria-labelledby="work-heading"
         >
           <div className="mx-auto max-w-6xl">
             <h2
               id="work-heading"
-              className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-white sm:text-4xl"
+              className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[var(--color-highlight)] sm:text-4xl"
             >
               Web apps
             </h2>
@@ -45,7 +45,7 @@ export default function Home() {
         </section>
         <section
           id="contact"
-          className="scroll-mt-20 border-t border-white/5 px-4 py-20 sm:px-6"
+          className="scroll-mt-20 border-t border-[color-mix(in_oklab,var(--color-brand-teal)_14%,transparent)] px-4 py-20 sm:px-6"
           aria-labelledby="contact-heading"
         >
           <h2 id="contact-heading" className="sr-only">

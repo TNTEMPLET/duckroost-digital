@@ -1,13 +1,31 @@
 @import "tailwindcss";
 
+/*
+ * DuckRoost Digital — brand palette (aligned to logo-mark.svg)
+ * Replace hex values here if you swap in a final logo file; keep SVG fills in sync.
+ *
+ * | Token              | Hex       | Use                          |
+ * |--------------------+-----------+------------------------------|
+ * | surface            | #0a1522   | page background              |
+ * | surface-elevated   | #132337   | cards, logo badge            |
+ * | accent             | #d97328   | copper — CTAs, highlights    |
+ * | accent-soft        | #e8a065   | accents, beak highlight      |
+ * | accent-muted       | #b85d1f   | hover / darker accent        |
+ * | brand-teal         | #2a7a7a   | water / secondary glows      |
+ * | mist               | #8fa9bd   | secondary text               |
+ * | highlight          | #f2ebe4   | warm light text on hover     |
+ */
 @theme {
   --font-display: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
   --font-body: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
-  --color-surface: #0c0f14;
-  --color-surface-elevated: #141a24;
-  --color-accent: #c9a227;
-  --color-accent-muted: #a6841f;
-  --color-mist: #8b9cb3;
+  --color-surface: #0a1522;
+  --color-surface-elevated: #132337;
+  --color-accent: #d97328;
+  --color-accent-soft: #e8a065;
+  --color-accent-muted: #b85d1f;
+  --color-brand-teal: #2a7a7a;
+  --color-mist: #8fa9bd;
+  --color-highlight: #f2ebe4;
 }
 
 html {
@@ -17,10 +35,10 @@ html {
 body {
   font-family: var(--font-body);
   background-color: var(--color-surface);
-  color: #e8ecf2;
+  color: var(--color-highlight);
 }
 
 ::selection {
-  background-color: color-mix(in oklab, var(--color-accent) 35%, transparent);
-  color: #0c0f14;
+  background-color: color-mix(in oklab, var(--color-accent) 38%, transparent);
+  color: var(--color-surface);
 }

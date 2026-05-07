@@ -5,7 +5,7 @@ function ProjectCard({ project }: { project: Project }) {
   const isRemoteImage = project.imageSrc.startsWith("http");
 
   return (
-    <article className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[var(--color-surface-elevated)] shadow-[0_0_0_1px_rgba(255,255,255,0.03)] transition-shadow hover:shadow-[0_24px_80px_-24px_rgba(201,162,39,0.15)]">
+    <article className="group flex flex-col overflow-hidden rounded-2xl border border-[color-mix(in_oklab,var(--color-brand-teal)_18%,transparent)] bg-[var(--color-surface-elevated)] shadow-[0_0_0_1px_color-mix(in_oklab,var(--color-accent)_12%,transparent)] transition-shadow hover:shadow-[0_24px_80px_-24px_color-mix(in_oklab,var(--color-accent)_22%,transparent)]">
       <div className="relative aspect-[16/10] overflow-hidden bg-black/40">
         <Image
           src={project.imageSrc}
@@ -18,7 +18,7 @@ function ProjectCard({ project }: { project: Project }) {
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-surface-elevated)] via-transparent to-transparent opacity-80" />
       </div>
       <div className="flex flex-1 flex-col p-6">
-        <h3 className="font-[family-name:var(--font-display)] text-xl font-semibold text-white">
+        <h3 className="font-[family-name:var(--font-display)] text-xl font-semibold text-[var(--color-highlight)]">
           {project.title}
         </h3>
         <p className="mt-2 flex-1 text-sm leading-relaxed text-[var(--color-mist)]">
@@ -28,7 +28,7 @@ function ProjectCard({ project }: { project: Project }) {
           {project.tags.map((tag) => (
             <li
               key={tag}
-              className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-[var(--color-mist)]"
+              className="rounded-full border border-[color-mix(in_oklab,var(--color-brand-teal)_22%,transparent)] bg-[color-mix(in_oklab,var(--color-brand-teal)_8%,transparent)] px-3 py-1 text-xs text-[var(--color-mist)]"
             >
               {tag}
             </li>
@@ -48,7 +48,7 @@ function ProjectCard({ project }: { project: Project }) {
               href={project.repo}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-medium text-[var(--color-mist)] underline-offset-4 hover:text-white hover:underline"
+              className="text-sm font-medium text-[var(--color-mist)] underline-offset-4 hover:text-[var(--color-highlight)] hover:underline"
             >
               Source
             </a>

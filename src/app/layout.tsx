@@ -56,7 +56,7 @@ export default function RootLayout({
       lang="en"
       className={`${outfit.variable} ${dmSans.variable} antialiased`}
     >
-      <body className="min-h-screen bg-[var(--color-surface)] text-[#e8ecf2]">
+      <body className="min-h-screen bg-[var(--color-surface)] text-[var(--color-highlight)]">
         {children}
       </body>
     </html>

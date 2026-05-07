@@ -1,7 +1,7 @@
 export function About() {
   return (
     <div className="mx-auto max-w-3xl">
-      <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+      <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[var(--color-highlight)] sm:text-4xl">
         Built like good woodwork
       </h2>
       <p className="mt-6 text-lg leading-relaxed text-[var(--color-mist)]">
