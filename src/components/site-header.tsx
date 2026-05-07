@@ -11,27 +11,27 @@ const nav = [
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-[color-mix(in_oklab,var(--color-brand-teal)_22%,transparent)] bg-[var(--color-surface)]/90 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:h-[4.5rem] sm:px-6">
+      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link
           href="/"
           aria-label={`${siteConfig.name} — home`}
           className="group flex min-w-0 items-center gap-2.5 rounded-lg outline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--color-accent-soft)] sm:gap-3"
         >
           <span
-            className="relative isolate h-11 w-11 shrink-0 overflow-hidden sm:h-14 sm:w-14"
+            className="relative isolate h-10 w-10 shrink-0 overflow-hidden sm:h-11 sm:w-11"
             aria-hidden
           >
             <Image
               src={siteConfig.brandLogo}
               alt=""
-              width={112}
-              height={112}
-              sizes="(max-width: 640px) 44px, 56px"
+              width={88}
+              height={88}
+              sizes="(max-width: 640px) 40px, 44px"
               className="h-full w-full origin-[center_top] scale-[1.68] object-cover object-top sm:scale-[1.72]"
               priority
             />
           </span>
-          <span className="min-w-0 truncate font-[family-name:var(--font-display)] text-base font-semibold leading-tight tracking-tight sm:text-xl">
+          <span className="min-w-0 truncate font-[family-name:var(--font-display)] text-sm font-semibold leading-tight tracking-tight sm:text-lg">
             <span className="text-[color-mix(in_oklab,var(--color-highlight)_96%,white)] [text-shadow:0_1px_2px_color-mix(in_oklab,var(--color-surface)_72%,transparent)]">
               DuckRoost
             </span>{" "}
@@ -48,20 +48,20 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="hidden text-[15px] text-[var(--color-mist)] transition-colors hover:text-[var(--color-highlight)] sm:inline sm:text-base"
+              className="hidden text-sm text-[var(--color-mist)] transition-colors hover:text-[var(--color-highlight)] sm:inline"
             >
               {item.label}
             </Link>
           ))}
           <Link
             href="#work"
-            className="text-[15px] text-[var(--color-mist)] transition-colors hover:text-[var(--color-highlight)] sm:hidden"
+            className="text-sm text-[var(--color-mist)] transition-colors hover:text-[var(--color-highlight)] sm:hidden"
           >
             Work
           </Link>
           <Link
             href="#contact"
-            className="rounded-full bg-[var(--color-accent)] px-3 py-2 text-xs font-medium text-[var(--color-surface)] shadow-[0_0_20px_-4px_color-mix(in_oklab,var(--color-accent)_55%,transparent)] transition-[opacity,box-shadow] hover:opacity-95 hover:shadow-[0_0_28px_-4px_color-mix(in_oklab,var(--color-accent-soft)_45%,transparent)] sm:px-5 sm:text-sm sm:py-2.5"
+            className="rounded-full bg-[var(--color-accent)] px-3 py-1.5 text-xs font-medium text-[var(--color-surface)] shadow-[0_0_20px_-4px_color-mix(in_oklab,var(--color-accent)_55%,transparent)] transition-[opacity,box-shadow] hover:opacity-95 hover:shadow-[0_0_28px_-4px_color-mix(in_oklab,var(--color-accent-soft)_45%,transparent)] sm:px-4 sm:text-sm"
           >
             Let&apos;s talk
           </Link>
