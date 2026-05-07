@@ -15,30 +15,17 @@ export function SiteHeader() {
         <Link
           href="/"
           aria-label={`${siteConfig.name} — home`}
-          className="group flex min-w-0 items-center gap-2.5 rounded-lg outline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--color-accent-soft)] sm:gap-3"
+          className="flex shrink-0 items-center rounded-lg outline-offset-4 focus-visible:outline-2 focus-visible:outline-[var(--color-accent-soft)]"
         >
-          <span
-            className="relative isolate h-10 w-10 shrink-0 overflow-hidden sm:h-11 sm:w-11"
-            aria-hidden
-          >
-            <Image
-              src={siteConfig.brandLogo}
-              alt=""
-              width={88}
-              height={88}
-              sizes="(max-width: 640px) 40px, 44px"
-              className="h-full w-full origin-[center_top] scale-[1.68] object-cover object-top sm:scale-[1.72]"
-              priority
-            />
-          </span>
-          <span className="min-w-0 truncate font-[family-name:var(--font-display)] text-sm font-semibold leading-tight tracking-tight sm:text-lg">
-            <span className="text-[color-mix(in_oklab,var(--color-highlight)_96%,white)] [text-shadow:0_1px_2px_color-mix(in_oklab,var(--color-surface)_72%,transparent)]">
-              DuckRoost
-            </span>{" "}
-            <span className="text-[var(--color-accent)] [text-shadow:0_0_20px_color-mix(in_oklab,var(--color-accent)_32%,transparent)]">
-              Digital
-            </span>
-          </span>
+          <Image
+            src={siteConfig.brandLogo}
+            alt=""
+            width={512}
+            height={512}
+            sizes="(max-width: 640px) 40px, 44px"
+            className="h-10 w-10 object-contain sm:h-11 sm:w-11"
+            priority
+          />
         </Link>
         <nav
           className="flex items-center gap-3 sm:gap-6"
