@@ -14,8 +14,11 @@ export const siteConfig = {
     "Custom web applications for businesses and beyond. Fast, reliable, and easy to maintain.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://duckroost-digital.vercel.app",
   locale: "en_US",
-  /** Header mark — replace file at `public/brand/logo-mark.svg` with your final artwork. */
-  brandLogoMark: "/brand/logo-mark.svg",
+  /**
+   * Full lockup (icon + wordmark). Prefer PNG in the header for sharp raster output.
+   * Optional SVG wrapper (embedded PNG): `/brand/logo-lockup.svg`.
+   */
+  brandLogo: "/brand/DuckRoostDigital-Logo.png",
   links: {
     email: "tntemplet@duckroostdigital.com",
     calendly: "",

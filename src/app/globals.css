@@ -1,31 +1,32 @@
 @import "tailwindcss";
 
 /*
- * DuckRoost Digital — brand palette (aligned to logo-mark.svg)
- * Replace hex values here if you swap in a final logo file; keep SVG fills in sync.
+ * DuckRoost Digital — palette aligned to DuckRoostDigital-Logo.png (navy + teal on black).
  *
- * | Token              | Hex       | Use                          |
- * |--------------------+-----------+------------------------------|
- * | surface            | #0a1522   | page background              |
- * | surface-elevated   | #132337   | cards, logo badge            |
- * | accent             | #d97328   | copper — CTAs, highlights    |
- * | accent-soft        | #e8a065   | accents, beak highlight      |
- * | accent-muted       | #b85d1f   | hover / darker accent        |
- * | brand-teal         | #2a7a7a   | water / secondary glows      |
- * | mist               | #8fa9bd   | secondary text               |
- * | highlight          | #f2ebe4   | warm light text on hover     |
+ * | Token              | Role                                      |
+ * |--------------------+-------------------------------------------|
+ * | surface            | near-black page background                |
+ * | surface-elevated   | cards / panels                            |
+ * | brand-navy         | navy from lockup (mixes, secondary glow) |
+ * | accent             | bright teal — CTAs, links, eyebrow       |
+ * | accent-soft        | lighter teal — hover, focus rings        |
+ * | accent-muted       | pressed / darker teal                     |
+ * | brand-teal         | muted teal — glass fills, borders        |
+ * | mist               | secondary text                            |
+ * | highlight          | primary body / heading text               |
  */
 @theme {
   --font-display: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
   --font-body: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
-  --color-surface: #0a1522;
-  --color-surface-elevated: #132337;
-  --color-accent: #d97328;
-  --color-accent-soft: #e8a065;
-  --color-accent-muted: #b85d1f;
-  --color-brand-teal: #2a7a7a;
-  --color-mist: #8fa9bd;
-  --color-highlight: #f2ebe4;
+  --color-surface: #05080c;
+  --color-surface-elevated: #101820;
+  --color-brand-navy: #2d455c;
+  --color-accent: #2fd4c9;
+  --color-accent-soft: #63ebd9;
+  --color-accent-muted: #23a89f;
+  --color-brand-teal: #1e5560;
+  --color-mist: #95aebf;
+  --color-highlight: #e8f1f5;
 }
 
 html {

@@ -14,20 +14,17 @@ export function SiteHeader() {
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link
           href="/"
-          className="group flex items-center gap-2.5 rounded-lg outline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--color-accent-soft)]"
+          aria-label={`${siteConfig.name} — home`}
+          className="rounded-lg outline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--color-accent-soft)]"
         >
           <Image
-            src={siteConfig.brandLogoMark}
-            alt=""
-            width={32}
-            height={32}
-            className="h-8 w-8 shrink-0"
+            src={siteConfig.brandLogo}
+            alt={siteConfig.name}
+            width={48}
+            height={48}
+            className="h-10 w-10 shrink-0 sm:h-11 sm:w-11"
             priority
-            unoptimized
           />
-          <span className="font-[family-name:var(--font-display)] text-sm font-semibold tracking-tight text-[var(--color-highlight)] transition-colors group-hover:text-[var(--color-accent-soft)]">
-            {siteConfig.name}
-          </span>
         </Link>
         <nav
           className="flex items-center gap-3 sm:gap-6"

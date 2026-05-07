@@ -9,7 +9,7 @@ export function Hero() {
         aria-hidden
       >
         <div className="absolute -left-1/4 top-0 h-[420px] w-[420px] rounded-full bg-[var(--color-accent)]/18 blur-[120px]" />
-        <div className="absolute -right-1/4 bottom-0 h-[380px] w-[380px] rounded-full bg-[var(--color-brand-teal)]/20 blur-[100px]" />
+        <div className="absolute -right-1/4 bottom-0 h-[380px] w-[380px] rounded-full bg-[var(--color-brand-navy)]/28 blur-[100px]" />
       </div>
       <div className="relative mx-auto max-w-6xl">
         <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-[var(--color-accent)]">

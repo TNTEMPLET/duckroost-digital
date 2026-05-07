@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Wrapper SVG for the DuckRoost Digital lockup (PNG under public/brand/).
+  Artwork is raster only  true vector paths require manual tracing from the source PNG.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2000" height="2000" viewBox="0 0 2000 2000" role="img">
+  <title>DuckRoost Digital</title>
+  <image href="/brand/DuckRoostDigital-Logo.png" xlink:href="/brand/DuckRoostDigital-Logo.png" width="2000" height="2000" preserveAspectRatio="xMidYMid meet" />
+</svg>
