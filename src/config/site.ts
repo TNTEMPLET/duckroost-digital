@@ -15,10 +15,11 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://duckroost-digital.vercel.app",
   locale: "en_US",
   /**
-   * Full lockup (icon + wordmark). Prefer PNG in the header for sharp raster output.
-   * Optional SVG wrapper (embedded PNG): `/brand/logo-lockup.svg`.
+   * Full lockup (icon + wordmark) for dark-themed surfaces.
+   * Swap to the light variant on light-themed sites.
    */
-  brandLogo: "/brand/DuckRoostDigital-Logo.png",
+  brandLogo: "/brand/DuckRoostDigital-Logo-dark.svg",
+
   links: {
     email: "tntemplet@duckroostdigital.com",
     calendly: "",

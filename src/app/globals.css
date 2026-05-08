@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 /*
- * DuckRoost Digital — palette aligned to DuckRoostDigital-Logo.png (navy + teal on black).
+ * DuckRoost Digital — palette aligned to DuckRoostDigital-Logo-dark.svg (navy + yellow on black).
  *
  * | Token              | Role                                      |
  * |--------------------+-------------------------------------------|
  * | surface            | near-black page background                |
  * | surface-elevated   | cards / panels                            |
  * | brand-navy         | navy from lockup (mixes, secondary glow) |
- * | accent             | bright teal — CTAs, links, eyebrow       |
- * | accent-soft        | lighter teal — hover, focus rings        |
- * | accent-muted       | pressed / darker teal                     |
- * | brand-teal         | muted teal — glass fills, borders        |
+ * | accent             | brand yellow — CTAs, links, eyebrow      |
+ * | accent-soft        | lighter yellow — hover, focus rings      |
+ * | accent-muted       | deeper yellow — pressed / active states  |
+ * | brand-teal         | muted yellow token for glass/borders     |
  * | mist               | secondary text                            |
  * | highlight          | primary body / heading text               |
  */
@@ -21,10 +21,10 @@
   --color-surface: #05080c;
   --color-surface-elevated: #101820;
   --color-brand-navy: #2d455c;
-  --color-accent: #2fd4c9;
-  --color-accent-soft: #63ebd9;
-  --color-accent-muted: #23a89f;
-  --color-brand-teal: #1e5560;
+  --color-accent: #f7cf57;
+  --color-accent-soft: #ffe08f;
+  --color-accent-muted: #c7a33c;
+  --color-brand-teal: #7a6526;
   --color-mist: #95aebf;
   --color-highlight: #e8f1f5;
 }
