@@ -25,8 +25,8 @@ export default function Home() {
               Web apps
             </h2>
             <p className="mt-3 max-w-2xl text-[var(--color-mist)]">
-              Live league and program sites for AP Baseball — admin, DYB, and
-              LLB.
+              Demo and live league/program sites for AP Baseball - admin, DYB,
+              and LLB.
             </p>
             <div className="mt-12">
               <ProjectGrid projects={projects} />

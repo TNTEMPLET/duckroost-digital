@@ -35,8 +35,18 @@ function ProjectCard({ project }: { project: Project }) {
           ))}
         </ul>
         <div className="mt-6 flex flex-wrap gap-3">
+          {project.demoHref ? (
+            <a
+              href={project.demoHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-[var(--color-highlight)] underline-offset-4 hover:underline"
+            >
+              Demo site
+            </a>
+          ) : null}
           <a
-            href={project.href}
+            href={project.liveHref}
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium text-[var(--color-accent)] underline-offset-4 hover:underline"

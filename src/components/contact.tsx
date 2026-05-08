@@ -31,13 +31,15 @@ export function Contact() {
           </a>
         ) : null}
       </div>
-      <p className="mt-6 text-xs text-[var(--color-mist)]/80">
-        Add your Calendly URL in{" "}
-        <code className="rounded bg-[color-mix(in_oklab,var(--color-brand-teal)_14%,transparent)] px-1.5 py-0.5 text-[var(--color-mist)]">
-          src/config/site.ts
-        </code>{" "}
-        to show a booking button.
-      </p>
+      {siteConfig.links.calendly !== null ? (
+        <p className="mt-6 text-xs text-[var(--color-mist)]/80">
+          Add your Calendly URL in{" "}
+          <code className="rounded bg-[color-mix(in_oklab,var(--color-brand-teal)_14%,transparent)] px-1.5 py-0.5 text-[var(--color-mist)]">
+            src/config/site.ts
+          </code>{" "}
+          to show a booking button.
+        </p>
+      ) : null}
     </div>
   );
 }

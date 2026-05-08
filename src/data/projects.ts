@@ -7,7 +7,8 @@ export type Project = {
   title: string;
   description: string;
   tags: string[];
-  href: string;
+  liveHref: string;
+  demoHref?: string;
   repo?: string;
   /** Path under /public or remote URL (configure next.config remotePatterns). */
   imageSrc: string;
@@ -20,7 +21,8 @@ export const projects: Project[] = [
     description:
       "League administration: registrations, rosters, reporting, and operational tools for AP Baseball staff.",
     tags: ["Next.js", "TypeScript", "Admin"],
-    href: "https://admin.apbaseball.com",
+    liveHref: "https://admin.apbaseball.com",
+    demoHref: "https://demo-admin.apbaseball.com",
     imageSrc: shot("/projects/ap-baseball-admin.png"),
     imageAlt:
       "Screenshot of the AP Baseball master admin control center dashboard",
@@ -30,7 +32,8 @@ export const projects: Project[] = [
     description:
       "Public DYB program site: team information, schedules, and season updates for families and coaches.",
     tags: ["Next.js", "TypeScript", "Tailwind"],
-    href: "https://dyb.apbaseball.com",
+    liveHref: "https://dyb.apbaseball.com",
+    demoHref: "https://demo-dyb.apbaseball.com",
     imageSrc: shot("/projects/gonzales-dyb.png"),
     imageAlt: "Screenshot of the Gonzales Diamond Youth Baseball website homepage",
   },
@@ -39,7 +42,8 @@ export const projects: Project[] = [
     description:
       "Little League program hub: league news, resources, and season details for the LLB division.",
     tags: ["Next.js", "TypeScript", "Vercel"],
-    href: "https://llb.apbaseball.com",
+    liveHref: "https://llb.apbaseball.com",
+    demoHref: "https://demo-llb.apbaseball.com",
     imageSrc: shot("/projects/ascension-llb.png"),
     imageAlt: "Screenshot of the Ascension Little League website homepage",
   },

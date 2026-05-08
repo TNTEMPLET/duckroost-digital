@@ -21,8 +21,8 @@ export const siteConfig = {
   brandLogo: "/brand/DuckRoostDigital-Logo-dark.svg",
 
   links: {
-    email: "tntemplet@duckroostdigital.com",
-    calendly: "",
+    email: "info@duckroostdigital.com",
+    calendly: null,
     github: "",
     linkedin: "",
   },
