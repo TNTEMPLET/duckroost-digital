@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Icon-only crop of DuckRoostDigital-Logo.svg.
+  Crops out the lower text region while preserving the full circular duck mark.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1500" viewBox="0 0 2000 1500" role="img" aria-label="DuckRoost Digital mark">
+  <image href="/brand/DuckRoostDigital-Logo.svg" x="0" y="0" width="2000" height="2000" preserveAspectRatio="xMidYMid slice" />
+</svg>

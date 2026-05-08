@@ -17,6 +17,13 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  icons: {
+    icon: [
+      { url: "/brand/DuckRoostDigital-Logo-dark.svg", type: "image/svg+xml" },
+    ],
+    shortcut: ["/brand/DuckRoostDigital-Logo-dark.svg"],
+    apple: ["/brand/DuckRoostDigital-Logo-dark.svg"],
+  },
   title: {
     default: `${siteConfig.name} · Web apps`,
     template: `%s · ${siteConfig.name}`,
