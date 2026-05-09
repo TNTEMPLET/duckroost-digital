@@ -20,23 +20,28 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[color-mix(in_oklab,var(--color-brand-teal)_22%,transparent)] bg-[var(--color-surface)]/90 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-3 sm:px-4">
         <Link
           href="/"
           aria-label={`${siteConfig.name} — home`}
           className="group flex shrink-0 items-center gap-0 rounded-lg outline-offset-4 focus-visible:outline-2 focus-visible:outline-[var(--color-accent-soft)]"
           onClick={closeMobileMenu}
         >
-          <Image
-            src={siteConfig.brandLogo}
-            alt=""
-            width={80}
-            height={80}
-            sizes="(max-width: 640px) 48px, 56px"
-            className="h-12 w-12 shrink-0 object-contain opacity-90 [filter:saturate(0.9)_contrast(0.95)_brightness(0.95)] sm:h-14 sm:w-14"
-            priority
-          />
-          <span className="-ml-0.5 font-[family-name:var(--font-display)] text-base font-semibold leading-none tracking-tight sm:-ml-1 sm:text-lg">
+          <span
+            className="relative flex size-14 shrink-0 overflow-hidden sm:size-16"
+            aria-hidden
+          >
+            <Image
+              src={siteConfig.brandLogo}
+              alt=""
+              width={128}
+              height={128}
+              sizes="(max-width: 640px) 56px, 64px"
+              className="absolute left-0 top-1/2 h-[118%] w-[118%] max-w-none -translate-y-1/2 object-cover object-left opacity-90 [filter:saturate(0.9)_contrast(0.95)_brightness(0.95)]"
+              priority
+            />
+          </span>
+          <span className="-ml-1 font-[family-name:var(--font-display)] text-base font-semibold leading-none tracking-tight sm:-ml-1.5 sm:text-lg">
             <span className="text-[color-mix(in_oklab,var(--color-highlight)_86%,white)] transition-colors group-hover:text-white">
               DuckRoost
             </span>{" "}
@@ -46,7 +51,7 @@ export function SiteHeader() {
           </span>
         </Link>
         <nav
-          className="flex items-center gap-3 sm:gap-6"
+          className="flex items-center gap-2 sm:gap-4"
           aria-label="Primary"
         >
           {nav.map((item) => (
