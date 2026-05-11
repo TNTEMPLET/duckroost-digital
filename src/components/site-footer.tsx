@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { siteConfig } from "@/config/site";
 
 export function SiteFooter() {
@@ -9,7 +11,13 @@ export function SiteFooter() {
         <p className="text-sm text-[var(--color-mist)]">
           © {year} {siteConfig.name}. All rights reserved.
         </p>
-        <div className="flex gap-6 text-sm">
+        <div className="flex flex-wrap items-center gap-6 text-sm">
+          <Link
+            href="/privacy"
+            className="text-[var(--color-mist)] hover:text-[var(--color-highlight)]"
+          >
+            Privacy
+          </Link>
           {siteConfig.links.github ? (
             <a
               href={siteConfig.links.github}
